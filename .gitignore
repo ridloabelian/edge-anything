@@ -1,0 +1,11 @@
+node_modules/
+.wrangler/
+.edge-anything/
+.env
+.env.*
+.DS_Store
+*.log
+coverage/
+/tmp-*
+*.sqlite
+*.db

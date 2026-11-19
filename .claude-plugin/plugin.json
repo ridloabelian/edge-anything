@@ -1,0 +1,14 @@
+{
+  "name": "edge-anything",
+  "version": "1.0.0",
+  "description": "Move any backend to Cloudflare Workers/D1/KV/R2/Queues/Containers and prove 100% behavioral parity via recorded HTTP traffic replay.",
+  "author": {
+    "name": "Ridlo Abelian",
+    "url": "https://github.com/ridloabelian"
+  },
+  "repository": "https://github.com/ridloabelian/edge-anything",
+  "license": "MIT",
+  "skills": [
+    "./skills/edge-anything"
+  ]
+}

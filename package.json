@@ -1,0 +1,57 @@
+{
+  "name": "edge-anything",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Move any backend to the edge, and prove it still behaves the same. Agentic Cloudflare Workers/D1/KV/R2/Queues/Containers migration & behavioral parity engine.",
+  "bin": {
+    "edge-anything": "./bin/edge-anything.mjs"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./mcp": "./src/mcp/server.ts",
+    "./simulator": "./src/verifier/simulator.ts"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "skills/",
+    ".claude-plugin/",
+    "docs/",
+    "AGENTS.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --no-warnings --experimental-strip-types --test tests/*.test.ts",
+    "benchmark": "node --no-warnings --experimental-strip-types scripts/benchmark-demo.ts",
+    "cli": "node --no-warnings --experimental-strip-types src/cli.ts"
+  },
+  "keywords": [
+    "cloudflare",
+    "cloudflare-workers",
+    "edge-computing",
+    "cloudflare-d1",
+    "cloudflare-r2",
+    "cloudflare-kv",
+    "migration",
+    "parity-testing",
+    "ai-agents",
+    "mcp-server",
+    "claude-code",
+    "codex",
+    "agent-skills"
+  ],
+  "author": "Ridlo Abelian",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ridloabelian/edge-anything.git"
+  },
+  "homepage": "https://github.com/ridloabelian/edge-anything#readme",
+  "bugs": {
+    "url": "https://github.com/ridloabelian/edge-anything/issues"
+  },
+  "engines": {
+    "node": ">=22.6.0"
+  }
+}

@@ -1,0 +1,38 @@
+// Ported Cloudflare Worker configuration for examples/legacy-node-api
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "edge-notes-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-01",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "edge-notes-db",
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "CACHE",
+      "id": "00000000000000000000000000000000"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "BUCKET",
+      "bucket_name": "edge-notes-blobs"
+    }
+  ],
+  "queues": {
+    "producers": [
+      {
+        "binding": "JOBS",
+        "queue": "edge-notes-jobs"
+      }
+    ]
+  },
+  "triggers": {
+    "crons": ["*/15 * * * *"]
+  }
+}
