@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280" width="960" height="280" role="img" aria-label="edge-anything dark hero banner">
+  <defs>
+    <linearGradient id="bg-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090D16" />
+      <stop offset="55%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <linearGradient id="accent-orange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F97316" />
+      <stop offset="100%" stop-color="#FDBA74" />
+    </linearGradient>
+    <linearGradient id="accent-emerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+    <radialGradient id="glow-left" cx="15%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#F38020" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#F38020" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glow-right" cx="85%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid-dark" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1E293B" stroke-width="0.7" stroke-opacity="0.55" />
+    </pattern>
+  </defs>
+
+  <rect x="4" y="4" width="952" height="272" rx="18" fill="url(#bg-dark)" stroke="#1E293B" stroke-width="1.5" />
+  <rect x="4" y="4" width="952" height="272" rx="18" fill="url(#grid-dark)" />
+  <rect x="4" y="4" width="952" height="272" rx="18" fill="url(#glow-left)" />
+  <rect x="4" y="4" width="952" height="272" rx="18" fill="url(#glow-right)" />
+
+  <!-- Brand Emblem -->
+  <rect x="234" y="46" width="52" height="52" rx="13" fill="#1E293B" stroke="#F38020" stroke-width="1.5" />
+  <path d="M264 56 L248 74 H259 L256 88 L272 70 H261 Z" fill="url(#accent-orange)" />
+
+  <!-- Title -->
+  <text x="302" y="87" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="44" font-weight="800" letter-spacing="-1">edge-anything</text>
+
+  <!-- Parity Pill -->
+  <rect x="614" y="59" width="114" height="26" rx="13" fill="#064E3B" stroke="#10B981" stroke-width="1" />
+  <text x="671" y="76" text-anchor="middle" fill="#6EE7B7" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="11.5" font-weight="700">100% PARITY</text>
+
+  <!-- Tagline -->
+  <text x="480" y="132" text-anchor="middle" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18.5" font-weight="500">Move any backend to the edge — and prove it still behaves the same.</text>
+  <text x="480" y="160" text-anchor="middle" fill="#94A3B8" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12.5">Workers · D1 · KV · R2 · Queues · Hyperdrive · Durable Objects · Containers · MCP + SKILL.md</text>
+
+  <!-- 5-Stage Pipeline Strip -->
+  <rect x="56" y="194" width="142" height="42" rx="10" fill="#111827" stroke="#334155" stroke-width="1.2" />
+  <text x="127" y="220" text-anchor="middle" fill="#FDBA74" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" font-weight="700">1. SCAN</text>
+
+  <text x="210" y="220" text-anchor="middle" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16">→</text>
+
+  <rect x="222" y="194" width="146" height="42" rx="10" fill="#111827" stroke="#334155" stroke-width="1.2" />
+  <text x="295" y="220" text-anchor="middle" fill="#93C5FD" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" font-weight="700">2. RECORD</text>
+
+  <text x="380" y="220" text-anchor="middle" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16">→</text>
+
+  <rect x="392" y="194" width="142" height="42" rx="10" fill="#111827" stroke="#334155" stroke-width="1.2" />
+  <text x="463" y="220" text-anchor="middle" fill="#C4B5FD" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" font-weight="700">3. PORT</text>
+
+  <text x="546" y="220" text-anchor="middle" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16">→</text>
+
+  <rect x="558" y="194" width="142" height="42" rx="10" fill="#111827" stroke="#334155" stroke-width="1.2" />
+  <text x="629" y="220" text-anchor="middle" fill="#FCD34D" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" font-weight="700">4. LINT</text>
+
+  <text x="712" y="220" text-anchor="middle" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16">→</text>
+
+  <rect x="724" y="194" width="180" height="42" rx="10" fill="#064E3B" stroke="#10B981" stroke-width="1.4" />
+  <text x="814" y="220" text-anchor="middle" fill="#6EE7B7" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" font-weight="700">5. GATE ✓ PARITY</text>
+</svg>

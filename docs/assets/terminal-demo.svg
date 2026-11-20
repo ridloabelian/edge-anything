@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 400" width="920" height="400" role="img" aria-label="edge-anything CLI parity workflow terminal output">
+  <defs>
+    <linearGradient id="term-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117" />
+      <stop offset="100%" stop-color="#0A0E14" />
+    </linearGradient>
+  </defs>
+
+  <rect x="4" y="4" width="912" height="392" rx="14" fill="url(#term-bg)" stroke="#30363D" stroke-width="1.5" />
+  <path d="M 4 18 Q 4 4 18 4 L 902 4 Q 916 4 916 18 L 916 42 L 4 42 Z" fill="#161B22" />
+  <line x1="4" y1="42" x2="916" y2="42" stroke="#30363D" stroke-width="1" />
+
+  <!-- macOS Traffic Lights -->
+  <circle cx="28" cy="23" r="6" fill="#FF5F56" />
+  <circle cx="48" cy="23" r="6" fill="#FFBD2E" />
+  <circle cx="68" cy="23" r="6" fill="#27C93F" />
+  <text x="460" y="27" text-anchor="middle" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12">edge-anything — parity pipeline (Node 22 · zero runtime deps)</text>
+
+  <!-- Step 1: Scan -->
+  <text x="28" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13">
+    <tspan fill="#F97316" font-weight="700">$</tspan>
+    <tspan fill="#F0F6FC"> npx edge-anything scan ./examples/legacy-node-api</tspan>
+  </text>
+  <text x="28" y="94" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" fill="#7EE787">  ✓ Stack: TypeScript / node-http · 12 routes · Readiness: 48/100</text>
+  <text x="28" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" fill="#79C0FF">  ✓ Bindings: d1:DB, kv:CACHE, r2:BUCKET, cron:CRON_TRIGGER</text>
+
+  <!-- Step 2: Record -->
+  <text x="28" y="148" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13">
+    <tspan fill="#F97316" font-weight="700">$</tspan>
+    <tspan fill="#F0F6FC"> npx edge-anything record --url http://127.0.0.1:3000 --spec scenarios.json</tspan>
+  </text>
+  <text x="28" y="170" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" fill="#7EE787">  ✓ Recorded 27 stateful HTTP cases (302 redirects, blobs, unicode ?q=)</text>
+
+  <!-- Step 3: Port -->
+  <text x="28" y="202" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13">
+    <tspan fill="#F97316" font-weight="700">$</tspan>
+    <tspan fill="#F0F6FC"> npx edge-anything port ./examples/legacy-node-api --out ./edge-worker</tspan>
+  </text>
+  <text x="28" y="224" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" fill="#D2A8FF">  ✓ Generated wrangler.jsonc, src/index.ts, shims/{d1,kv,r2}.ts, 0001_init.sql</text>
+
+  <!-- Step 4 & 5: Gate -->
+  <text x="28" y="256" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13">
+    <tspan fill="#F97316" font-weight="700">$</tspan>
+    <tspan fill="#F0F6FC"> npx edge-anything gate ./edge-worker --corpus .edge-anything/corpus.json</tspan>
+  </text>
+  <text x="28" y="278" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" fill="#7EE787">  ✓ Lint PASS: 0 errors, 0 warnings · Bundle: 10,476 bytes</text>
+  <text x="28" y="300" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" fill="#7EE787">  ✓ Diff PASS: 27/27 matched (100% parity, 0 mismatches)</text>
+  <text x="28" y="322" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" fill="#A5D6FF">  ✓ Latency  : Origin p50 3.607 ms → In-Process Edge Simulator p50 0.241 ms</text>
+
+  <!-- Highlight Verdict -->
+  <rect x="24" y="340" width="872" height="36" rx="8" fill="#064E3B" fill-opacity="0.65" stroke="#10B981" stroke-width="1" />
+  <text x="42" y="363" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" font-weight="700" fill="#6EE7B7">★ RELEASE GATE PASSED — 0 lint errors · 27/27 parity verified · Ready for wrangler deploy</text>
+</svg>
